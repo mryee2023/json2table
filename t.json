@@ -1,0 +1,279 @@
+{
+    "agentUser": {
+      "name": "string",
+      "userId": "string"
+    },
+    "amount": {
+      "baseCurrencyCode": "CNY",
+      "currencyCode": "CNY",
+      "exchangeRate": "string"
+    },
+    "businessStatus": 0,
+    "businessTripType": "for_private",
+    "contactUser": {
+      "email": "string",
+      "name": "string",
+      "phone": "string",
+      "phoneAreaCode": "string"
+    },
+    "createTime": "string",
+    "international": true,
+    "items": [
+      {
+        "airportFeeOriginPrice": "string",
+        "airportFeePrice": "string",
+        "fuelFeeOriginPrice": "string",
+        "fuelFeePrice": "string",
+        "outFulfillmentOrderSn": "string",
+        "passenger": {
+          "EmployeeId": "string",
+          "businessTripApplicationForm": {
+            "applicationNo": "string",
+            "applier": "string",
+            "departmentId": "string",
+            "employeeId": "string",
+            "travelArrivalCity": "string",
+            "travelDepartureCity": "string",
+            "travelEndTime": "string",
+            "travelStartTime": "string"
+          },
+          "costCenterCode": "string",
+          "costCenterName": "string",
+          "departmentId": "string",
+          "departmentName": "string",
+          "passenger": {
+            "birthday": "string",
+            "cnFirstName": "string",
+            "cnLastName": "string",
+            "country": "string",
+            "countryCode": "string",
+            "customerEmployee": {
+              "companyCode": "string",
+              "companyName": "string",
+              "departmentCode": "string",
+              "departmentName": "string",
+              "email": "string",
+              "employeeId": "string",
+              "memberCode": "string",
+              "organizationId": "string",
+              "phone": "string",
+              "phoneAreaCode": "string",
+              "userId": "string",
+              "userLevel": "string",
+              "username": "string"
+            },
+            "email": "string",
+            "enFirstName": "string",
+            "enLastName": "string",
+            "gender": "male",
+            "idExpire": "string",
+            "idNo": "string",
+            "idType": "idCard",
+            "passengerType": "adult",
+            "phone": "string",
+            "phoneAreaCode": "string",
+            "pyFirstName": "string",
+            "pyLastName": "string"
+          },
+          "reimburseCenterCode": "string",
+          "reimburseCenterName": "string"
+        },
+        "payAmount": "string",
+        "ticketNo": "string",
+        "ticketOriginSalePrice": "string",
+        "ticketSalePrice": "string",
+        "ticketStatus": ""
+      }
+    ],
+    "merchantId": "string",
+    "note": {
+      "customerFiles": [
+        "string"
+      ],
+      "customerNote": "string",
+      "customerResources": [
+        "string"
+      ],
+      "customerServiceAgentFiles": [
+        "string"
+      ],
+      "customerServiceAgentNote": "string",
+      "customerServiceAgentResources": [
+        "string"
+      ],
+      "orderReason": {
+        "desc": "string",
+        "id": "string"
+      },
+      "specialService": [
+        {
+          "desc": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "outOrderNo": "string",
+    "paid": [
+      {
+        "orderSn": "string",
+        "payAmount": "string",
+        "payCurrency": "CNY",
+        "payMethodName": "string",
+        "payMethodType": "credit",
+        "payNo": "string",
+        "paySerialNumber": "string",
+        "payTime": "string"
+      }
+    ],
+    "serviceProviderId": "string",
+    "tenantId": "string",
+    "terminal": {
+      "orderSource": "string",
+      "terminalId": "string",
+      "terminalIp": "string",
+      "terminalType": "h5"
+    },
+    "user": {
+      "customerEmployee": {
+        "companyCode": "string",
+        "companyName": "string",
+        "departmentCode": "string",
+        "departmentName": "string",
+        "email": "string",
+        "employeeId": "string",
+        "memberCode": "string",
+        "organizationId": "string",
+        "phone": "string",
+        "phoneAreaCode": "string",
+        "userId": "string",
+        "userLevel": "string",
+        "username": "string"
+      },
+      "email": "string",
+      "name": "string",
+      "phone": "string",
+      "phoneAreaCode": "string",
+      "userId": "string"
+    },
+    "voyage": {
+      "ServiceProvideId": "string",
+      "arriveAddress": {
+        "city": "string",
+        "cityCode": "string",
+        "country": "string",
+        "countryCode": "string",
+        "province": "string",
+        "provinceCode": "string"
+      },
+      "assetAccountId": "string",
+      "departAddress": {
+        "city": "string",
+        "cityCode": "string",
+        "country": "string",
+        "countryCode": "string",
+        "province": "string",
+        "provinceCode": "string"
+      },
+      "direction": "depart",
+      "externalVoyageId": "string",
+      "merchantId": "string",
+      "officeCode": "string",
+      "officeName": "string",
+      "priceInfoId": "string",
+      "promotionCode": "string",
+      "realRoundTrip": true,
+      "segment": [
+        {
+          "additionalInfo": [
+            {
+              "desc": "string",
+              "key": "string"
+            }
+          ],
+          "airline": {
+            "aircraftModel": "string",
+            "airline": "string",
+            "airlineId": "string"
+          },
+          "airlineCode": "string",
+          "arriveTerminal": {
+            "arrivalDate": "string",
+            "city": "string",
+            "cityCode": "string",
+            "country": "string",
+            "countryCode": "string",
+            "departureDate": "string",
+            "province": "string",
+            "provinceCode": "string",
+            "terminal": "string",
+            "terminalCode": "string",
+            "time": "string",
+            "trafficHub": "string",
+            "trafficHubCode": "string"
+          },
+          "cabin": {
+            "cabin": "string",
+            "cabinCode": "string",
+            "cabinType": "super_economy",
+            "price": [
+              {
+                "airportFee": "string",
+                "oilFee": "string",
+                "ticketPrice": "string",
+                "type": "adult"
+              }
+            ],
+            "subCabin": "string"
+          },
+          "carbonEmission": "string",
+          "clearingBank": "string",
+          "departTerminal": {
+            "arrivalDate": "string",
+            "city": "string",
+            "cityCode": "string",
+            "country": "string",
+            "countryCode": "string",
+            "departureDate": "string",
+            "province": "string",
+            "provinceCode": "string",
+            "terminal": "string",
+            "terminalCode": "string",
+            "time": "string",
+            "trafficHub": "string",
+            "trafficHubCode": "string"
+          },
+          "flight": {
+            "flightId": "string",
+            "flightNo": "string"
+          },
+          "hasStopover": true,
+          "sharedAirline": {
+            "aircraftModel": "string",
+            "airline": "string",
+            "airlineId": "string"
+          },
+          "sharedFlight": {
+            "flightId": "string",
+            "flightNo": "string"
+          },
+          "stopover": [
+            {
+              "arrivalTime": "string",
+              "city": "string",
+              "cityCode": "string",
+              "country": "string",
+              "countryCode": "string",
+              "departureTime": "string",
+              "province": "string",
+              "provinceCode": "string",
+              "trafficHub": "string",
+              "trafficHubCode": "string"
+            }
+          ]
+        }
+      ],
+      "supplierCode": "string",
+      "supplierName": "string",
+      "voyageType": "single"
+    }
+  }
