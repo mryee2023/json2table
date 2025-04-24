@@ -1,232 +1,238 @@
 | 参数名称 | 参数类型 | 参数说明 | 是否必填 | 参数值约束 |
 |---------|---------|---------|---------|------------|
-| agentUser | object | - | 否 | - |
-| └name | string | - | 否 | string |
-| └userId | string | - | 否 | string |
-| amount | object | - | 否 | - |
-| └baseCurrencyCode | string | - | 否 | CNY |
-| └currencyCode | string | - | 否 | CNY |
-| └exchangeRate | string | - | 否 | string |
-| businessStatus | number | - | 否 | 0 |
-| businessTripType | string | - | 否 | for_private |
-| contactUser | object | - | 否 | - |
-| └email | string | - | 否 | string |
-| └name | string | - | 否 | string |
-| └phone | string | - | 否 | string |
-| └phoneAreaCode | string | - | 否 | string |
-| createTime | string | - | 否 | string |
-| international | boolean | - | 否 | true/false |
-| items | array | - | 否 | - |
-| └airportFeeOriginPrice | string | - | 否 | string |
-| └airportFeePrice | string | - | 否 | string |
-| └fuelFeeOriginPrice | string | - | 否 | string |
-| └fuelFeePrice | string | - | 否 | string |
-| └outFulfillmentOrderSn | string | - | 否 | string |
-| └passenger | object | - | 否 | - |
-| └└EmployeeId | string | - | 否 | string |
-| └└businessTripApplicationForm | object | - | 否 | - |
-| └└└applicationNo | string | - | 否 | string |
-| └└└applier | string | - | 否 | string |
-| └└└departmentId | string | - | 否 | string |
-| └└└employeeId | string | - | 否 | string |
-| └└└travelArrivalCity | string | - | 否 | string |
-| └└└travelDepartureCity | string | - | 否 | string |
-| └└└travelEndTime | string | - | 否 | string |
-| └└└travelStartTime | string | - | 否 | string |
-| └└costCenterCode | string | - | 否 | string |
-| └└costCenterName | string | - | 否 | string |
-| └└departmentId | string | - | 否 | string |
-| └└departmentName | string | - | 否 | string |
-| └└passenger | object | - | 否 | - |
-| └└└birthday | string | - | 否 | string |
-| └└└cnFirstName | string | - | 否 | string |
-| └└└cnLastName | string | - | 否 | string |
-| └└└country | string | - | 否 | string |
-| └└└countryCode | string | - | 否 | string |
-| └└└customerEmployee | object | - | 否 | - |
-| └└└└companyCode | string | - | 否 | string |
-| └└└└companyName | string | - | 否 | string |
-| └└└└departmentCode | string | - | 否 | string |
-| └└└└departmentName | string | - | 否 | string |
-| └└└└email | string | - | 否 | string |
-| └└└└employeeId | string | - | 否 | string |
-| └└└└memberCode | string | - | 否 | string |
-| └└└└organizationId | string | - | 否 | string |
-| └└└└phone | string | - | 否 | string |
-| └└└└phoneAreaCode | string | - | 否 | string |
-| └└└└userId | string | - | 否 | string |
-| └└└└userLevel | string | - | 否 | string |
-| └└└└username | string | - | 否 | string |
-| └└└email | string | - | 否 | string |
-| └└└enFirstName | string | - | 否 | string |
-| └└└enLastName | string | - | 否 | string |
-| └└└gender | string | - | 否 | male |
-| └└└idExpire | string | - | 否 | string |
-| └└└idNo | string | - | 否 | string |
-| └└└idType | string | - | 否 | idCard |
-| └└└passengerType | string | - | 否 | adult |
-| └└└phone | string | - | 否 | string |
-| └└└phoneAreaCode | string | - | 否 | string |
-| └└└pyFirstName | string | - | 否 | string |
-| └└└pyLastName | string | - | 否 | string |
-| └└reimburseCenterCode | string | - | 否 | string |
-| └└reimburseCenterName | string | - | 否 | string |
-| └payAmount | string | - | 否 | string |
-| └ticketNo | string | - | 否 | string |
-| └ticketOriginSalePrice | string | - | 否 | string |
-| └ticketSalePrice | string | - | 否 | string |
-| └ticketStatus | string | - | 否 | - |
-| merchantId | string | - | 否 | string |
-| note | object | - | 否 | - |
-| └customerFiles | array | - | 否 | - |
-| └  [string] | string | - | 否 | string |
-| └customerNote | string | - | 否 | string |
-| └customerResources | array | - | 否 | - |
-| └  [string] | string | - | 否 | string |
-| └customerServiceAgentFiles | array | - | 否 | - |
-| └  [string] | string | - | 否 | string |
-| └customerServiceAgentNote | string | - | 否 | string |
-| └customerServiceAgentResources | array | - | 否 | - |
-| └  [string] | string | - | 否 | string |
-| └orderReason | object | - | 否 | - |
-| └└desc | string | - | 否 | string |
-| └└id | string | - | 否 | string |
-| └specialService | array | - | 否 | - |
-| └└desc | string | - | 否 | string |
-| └└id | string | - | 否 | string |
-| outOrderNo | string | - | 否 | string |
-| paid | array | - | 否 | - |
-| └orderSn | string | - | 否 | string |
-| └payAmount | string | - | 否 | string |
-| └payCurrency | string | - | 否 | CNY |
-| └payMethodName | string | - | 否 | string |
-| └payMethodType | string | - | 否 | credit |
-| └payNo | string | - | 否 | string |
-| └paySerialNumber | string | - | 否 | string |
-| └payTime | string | - | 否 | string |
-| serviceProviderId | string | - | 否 | string |
-| tenantId | string | - | 否 | string |
-| terminal | object | - | 否 | - |
-| └orderSource | string | - | 否 | string |
-| └terminalId | string | - | 否 | string |
-| └terminalIp | string | - | 否 | string |
-| └terminalType | string | - | 否 | h5 |
-| user | object | - | 否 | - |
-| └customerEmployee | object | - | 否 | - |
-| └└companyCode | string | - | 否 | string |
-| └└companyName | string | - | 否 | string |
-| └└departmentCode | string | - | 否 | string |
-| └└departmentName | string | - | 否 | string |
-| └└email | string | - | 否 | string |
-| └└employeeId | string | - | 否 | string |
-| └└memberCode | string | - | 否 | string |
-| └└organizationId | string | - | 否 | string |
-| └└phone | string | - | 否 | string |
-| └└phoneAreaCode | string | - | 否 | string |
-| └└userId | string | - | 否 | string |
-| └└userLevel | string | - | 否 | string |
-| └└username | string | - | 否 | string |
-| └email | string | - | 否 | string |
-| └name | string | - | 否 | string |
-| └phone | string | - | 否 | string |
-| └phoneAreaCode | string | - | 否 | string |
-| └userId | string | - | 否 | string |
-| voyage | object | - | 否 | - |
-| └ServiceProvideId | string | - | 否 | string |
-| └arriveAddress | object | - | 否 | - |
-| └└city | string | - | 否 | string |
-| └└cityCode | string | - | 否 | string |
-| └└country | string | - | 否 | string |
-| └└countryCode | string | - | 否 | string |
-| └└province | string | - | 否 | string |
-| └└provinceCode | string | - | 否 | string |
-| └assetAccountId | string | - | 否 | string |
-| └departAddress | object | - | 否 | - |
-| └└city | string | - | 否 | string |
-| └└cityCode | string | - | 否 | string |
-| └└country | string | - | 否 | string |
-| └└countryCode | string | - | 否 | string |
-| └└province | string | - | 否 | string |
-| └└provinceCode | string | - | 否 | string |
-| └direction | string | - | 否 | depart |
-| └externalVoyageId | string | - | 否 | string |
-| └merchantId | string | - | 否 | string |
-| └officeCode | string | - | 否 | string |
-| └officeName | string | - | 否 | string |
-| └priceInfoId | string | - | 否 | string |
-| └promotionCode | string | - | 否 | string |
-| └realRoundTrip | boolean | - | 否 | true/false |
-| └segment | array | - | 否 | - |
-| └└additionalInfo | array | - | 否 | - |
-| └└└desc | string | - | 否 | string |
-| └└└key | string | - | 否 | string |
-| └└airline | object | - | 否 | - |
-| └└└aircraftModel | string | - | 否 | string |
-| └└└airline | string | - | 否 | string |
-| └└└airlineId | string | - | 否 | string |
-| └└airlineCode | string | - | 否 | string |
-| └└arriveTerminal | object | - | 否 | - |
-| └└└arrivalDate | string | - | 否 | string |
-| └└└city | string | - | 否 | string |
-| └└└cityCode | string | - | 否 | string |
-| └└└country | string | - | 否 | string |
-| └└└countryCode | string | - | 否 | string |
-| └└└departureDate | string | - | 否 | string |
-| └└└province | string | - | 否 | string |
-| └└└provinceCode | string | - | 否 | string |
-| └└└terminal | string | - | 否 | string |
-| └└└terminalCode | string | - | 否 | string |
-| └└└time | string | - | 否 | string |
-| └└└trafficHub | string | - | 否 | string |
-| └└└trafficHubCode | string | - | 否 | string |
-| └└cabin | object | - | 否 | - |
-| └└└cabin | string | - | 否 | string |
-| └└└cabinCode | string | - | 否 | string |
-| └└└cabinType | string | - | 否 | super_economy |
-| └└└price | array | - | 否 | - |
-| └└└└airportFee | string | - | 否 | string |
-| └└└└oilFee | string | - | 否 | string |
-| └└└└ticketPrice | string | - | 否 | string |
-| └└└└type | string | - | 否 | adult |
-| └└└subCabin | string | - | 否 | string |
-| └└carbonEmission | string | - | 否 | string |
-| └└clearingBank | string | - | 否 | string |
-| └└departTerminal | object | - | 否 | - |
-| └└└arrivalDate | string | - | 否 | string |
-| └└└city | string | - | 否 | string |
-| └└└cityCode | string | - | 否 | string |
-| └└└country | string | - | 否 | string |
-| └└└countryCode | string | - | 否 | string |
-| └└└departureDate | string | - | 否 | string |
-| └└└province | string | - | 否 | string |
-| └└└provinceCode | string | - | 否 | string |
-| └└└terminal | string | - | 否 | string |
-| └└└terminalCode | string | - | 否 | string |
-| └└└time | string | - | 否 | string |
-| └└└trafficHub | string | - | 否 | string |
-| └└└trafficHubCode | string | - | 否 | string |
-| └└flight | object | - | 否 | - |
-| └└└flightId | string | - | 否 | string |
-| └└└flightNo | string | - | 否 | string |
-| └└hasStopover | boolean | - | 否 | true/false |
-| └└sharedAirline | object | - | 否 | - |
-| └└└aircraftModel | string | - | 否 | string |
-| └└└airline | string | - | 否 | string |
-| └└└airlineId | string | - | 否 | string |
-| └└sharedFlight | object | - | 否 | - |
-| └└└flightId | string | - | 否 | string |
-| └└└flightNo | string | - | 否 | string |
-| └└stopover | array | - | 否 | - |
-| └└└arrivalTime | string | - | 否 | string |
-| └└└city | string | - | 否 | string |
-| └└└cityCode | string | - | 否 | string |
-| └└└country | string | - | 否 | string |
-| └└└countryCode | string | - | 否 | string |
-| └└└departureTime | string | - | 否 | string |
-| └└└province | string | - | 否 | string |
-| └└└provinceCode | string | - | 否 | string |
-| └└└trafficHub | string | - | 否 | string |
-| └└└trafficHubCode | string | - | 否 | string |
-| └supplierCode | string | - | 否 | string |
-| └supplierName | string | - | 否 | string |
-| └voyageType | string | - | 否 | single |
+| agentUser | object | - |  | - |
+| └─ name | string | - |  | string |
+| └─ userId | string | - |  | string |
+| amount | object | - |  | - |
+| └─ baseCurrencyCode | string | - |  | CNY |
+| └─ currencyCode | string | - |  | CNY |
+| └─ exchangeRate | string | - |  | string |
+| businessStatus | number | - |  | 0 |
+| businessTripType | string | - |  | for_private |
+| contactUser | object | - |  | - |
+| └─ email | string | - |  | string |
+| └─ name | string | - |  | string |
+| └─ phone | string | - |  | string |
+| └─ phoneAreaCode | string | - |  | string |
+| createTime | string | - |  | string |
+| international | boolean | - |  | true/false |
+| items | array | - |  | - |
+| └─ airportFeeOriginPrice | string | - |  | string |
+| └─ airportFeePrice | string | - |  | string |
+| └─ fuelFeeOriginPrice | string | - |  | string |
+| └─ fuelFeePrice | string | - |  | string |
+| └─ outFulfillmentOrderSn | string | - |  | string |
+| └─ passenger | object | - |  | - |
+| │  └─ EmployeeId | string | - |  | string |
+| │  └─ businessTripApplicationForm | object | - |  | - |
+| │  │  └─ applicationNo | string | - |  | string |
+| │  │  └─ applier | string | - |  | string |
+| │  │  └─ departmentId | string | - |  | string |
+| │  │  └─ employeeId | string | - |  | string |
+| │  │  └─ travelArrivalCity | string | - |  | string |
+| │  │  └─ travelDepartureCity | string | - |  | string |
+| │  │  └─ travelEndTime | string | - |  | string |
+| │  │  └─ travelStartTime | string | - |  | string |
+| │  └─ costCenterCode | string | - |  | string |
+| │  └─ costCenterName | string | - |  | string |
+| │  └─ departmentId | string | - |  | string |
+| │  └─ departmentName | string | - |  | string |
+| │  └─ passenger | object | - |  | - |
+| │  │  └─ birthday | string | - |  | string |
+| │  │  └─ cnFirstName | string | - |  | string |
+| │  │  └─ cnLastName | string | - |  | string |
+| │  │  └─ country | string | - |  | string |
+| │  │  └─ countryCode | string | - |  | string |
+| │  │  └─ customerEmployee | object | - |  | - |
+| │  │  │  └─ companyCode | string | - |  | string |
+| │  │  │  └─ companyName | string | - |  | string |
+| │  │  │  └─ departmentCode | string | - |  | string |
+| │  │  │  └─ departmentName | string | - |  | string |
+| │  │  │  └─ email | string | - |  | string |
+| │  │  │  └─ employeeId | string | - |  | string |
+| │  │  │  └─ memberCode | string | - |  | string |
+| │  │  │  └─ organizationId | string | - |  | string |
+| │  │  │  └─ phone | string | - |  | string |
+| │  │  │  └─ phoneAreaCode | string | - |  | string |
+| │  │  │  └─ userId | string | - |  | string |
+| │  │  │  └─ userLevel | string | - |  | string |
+| │  │  │  └─ username | string | - |  | string |
+| │  │  └─ email | string | - |  | string |
+| │  │  └─ enFirstName | string | - |  | string |
+| │  │  └─ enLastName | string | - |  | string |
+| │  │  └─ gender | string | - |  | male |
+| │  │  └─ idExpire | string | - |  | string |
+| │  │  └─ idNo | string | - |  | string |
+| │  │  └─ idType | string | - |  | idCard |
+| │  │  └─ passengerType | string | - |  | adult |
+| │  │  └─ phone | string | - |  | string |
+| │  │  └─ phoneAreaCode | string | - |  | string |
+| │  │  └─ pyFirstName | string | - |  | string |
+| │  │  └─ pyLastName | string | - |  | string |
+| │  └─ reimburseCenterCode | string | - |  | string |
+| │  └─ reimburseCenterName | string | - |  | string |
+| └─ payAmount | string | - |  | string |
+| └─ ticketNo | string | - |  | string |
+| └─ ticketOriginSalePrice | string | - |  | string |
+| └─ ticketSalePrice | string | - |  | string |
+| └─ ticketStatus | string | - |  | - |
+| merchantId | string | - |  | string |
+| note | object | - |  | - |
+| └─ customerFiles | array | - |  | - |
+| └─ └─ [string] | string | - |  | string |
+| └─ customerNote | string | - |  | string |
+| └─ customerResources | array | - |  | - |
+| └─ └─ [string] | string | - |  | string |
+| └─ customerServiceAgentFiles | array | - |  | - |
+| └─ └─ [string] | string | - |  | string |
+| └─ customerServiceAgentNote | string | - |  | string |
+| └─ customerServiceAgentResources | array | - |  | - |
+| └─ └─ [string] | string | - |  | string |
+| └─ orderReason | object | - |  | - |
+| │  └─ desc | string | - |  | string |
+| │  └─ id | string | - |  | string |
+| └─ specialService | array | - |  | - |
+| │  └─ desc | string | - |  | string |
+| │  └─ id | string | - |  | string |
+| outOrderNo | string | - |  | string |
+| paid | array | - |  | - |
+| └─ orderSn | string | - |  | string |
+| └─ payAmount | string | - |  | string |
+| └─ payCurrency | string | - |  | CNY |
+| └─ payMethodName | string | - |  | string |
+
+| 参数名称 | 参数类型 | 参数说明 | 是否必填 | 参数值约束 |
+|---------|---------|---------|---------|------------|
+| └─ payMethodType | string | - |  | credit |
+| └─ payNo | string | - |  | string |
+| └─ paySerialNumber | string | - |  | string |
+| └─ payTime | string | - |  | string |
+| serviceProviderId | string | - |  | string |
+| tenantId | string | - |  | string |
+| terminal | object | - |  | - |
+| └─ orderSource | string | - |  | string |
+| └─ terminalId | string | - |  | string |
+| └─ terminalIp | string | - |  | string |
+| └─ terminalType | string | - |  | h5 |
+| user | object | - |  | - |
+| └─ customerEmployee | object | - |  | - |
+| │  └─ companyCode | string | - |  | string |
+| │  └─ companyName | string | - |  | string |
+| │  └─ departmentCode | string | - |  | string |
+| │  └─ departmentName | string | - |  | string |
+| │  └─ email | string | - |  | string |
+| │  └─ employeeId | string | - |  | string |
+| │  └─ memberCode | string | - |  | string |
+| │  └─ organizationId | string | - |  | string |
+| │  └─ phone | string | - |  | string |
+| │  └─ phoneAreaCode | string | - |  | string |
+| │  └─ userId | string | - |  | string |
+| │  └─ userLevel | string | - |  | string |
+| │  └─ username | string | - |  | string |
+| └─ email | string | - |  | string |
+| └─ name | string | - |  | string |
+| └─ phone | string | - |  | string |
+| └─ phoneAreaCode | string | - |  | string |
+| └─ userId | string | - |  | string |
+| voyage | object | - |  | - |
+| └─ ServiceProvideId | string | - |  | string |
+| └─ arriveAddress | object | - |  | - |
+| │  └─ city | string | - |  | string |
+| │  └─ cityCode | string | - |  | string |
+| │  └─ country | string | - |  | string |
+| │  └─ countryCode | string | - |  | string |
+| │  └─ province | string | - |  | string |
+| │  └─ provinceCode | string | - |  | string |
+| └─ assetAccountId | string | - |  | string |
+| └─ departAddress | object | - |  | - |
+| │  └─ city | string | - |  | string |
+| │  └─ cityCode | string | - |  | string |
+| │  └─ country | string | - |  | string |
+| │  └─ countryCode | string | - |  | string |
+| │  └─ province | string | - |  | string |
+| │  └─ provinceCode | string | - |  | string |
+| └─ direction | string | - |  | depart |
+| └─ externalVoyageId | string | - |  | string |
+| └─ merchantId | string | - |  | string |
+| └─ officeCode | string | - |  | string |
+| └─ officeName | string | - |  | string |
+| └─ priceInfoId | string | - |  | string |
+| └─ promotionCode | string | - |  | string |
+| └─ realRoundTrip | boolean | - |  | true/false |
+| └─ segment | array | - |  | - |
+| │  └─ additionalInfo | array | - |  | - |
+| │  │  └─ desc | string | - |  | string |
+| │  │  └─ key | string | - |  | string |
+| │  └─ airline | object | - |  | - |
+| │  │  └─ aircraftModel | string | - |  | string |
+| │  │  └─ airline | string | - |  | string |
+| │  │  └─ airlineId | string | - |  | string |
+| │  └─ airlineCode | string | - |  | string |
+| │  └─ arriveTerminal | object | - |  | - |
+| │  │  └─ arrivalDate | string | - |  | string |
+| │  │  └─ city | string | - |  | string |
+| │  │  └─ cityCode | string | - |  | string |
+| │  │  └─ country | string | - |  | string |
+| │  │  └─ countryCode | string | - |  | string |
+| │  │  └─ departureDate | string | - |  | string |
+| │  │  └─ province | string | - |  | string |
+| │  │  └─ provinceCode | string | - |  | string |
+| │  │  └─ terminal | string | - |  | string |
+| │  │  └─ terminalCode | string | - |  | string |
+| │  │  └─ time | string | - |  | string |
+| │  │  └─ trafficHub | string | - |  | string |
+| │  │  └─ trafficHubCode | string | - |  | string |
+| │  └─ cabin | object | - |  | - |
+| │  │  └─ cabin | string | - |  | string |
+| │  │  └─ cabinCode | string | - |  | string |
+| │  │  └─ cabinType | string | - |  | super_economy |
+| │  │  └─ price | array | - |  | - |
+| │  │  │  └─ airportFee | string | - |  | string |
+| │  │  │  └─ oilFee | string | - |  | string |
+| │  │  │  └─ ticketPrice | string | - |  | string |
+| │  │  │  └─ type | string | - |  | adult |
+| │  │  └─ subCabin | string | - |  | string |
+| │  └─ carbonEmission | string | - |  | string |
+| │  └─ clearingBank | string | - |  | string |
+| │  └─ departTerminal | object | - |  | - |
+| │  │  └─ arrivalDate | string | - |  | string |
+| │  │  └─ city | string | - |  | string |
+| │  │  └─ cityCode | string | - |  | string |
+| │  │  └─ country | string | - |  | string |
+| │  │  └─ countryCode | string | - |  | string |
+| │  │  └─ departureDate | string | - |  | string |
+| │  │  └─ province | string | - |  | string |
+| │  │  └─ provinceCode | string | - |  | string |
+
+| 参数名称 | 参数类型 | 参数说明 | 是否必填 | 参数值约束 |
+|---------|---------|---------|---------|------------|
+| │  │  └─ terminal | string | - |  | string |
+| │  │  └─ terminalCode | string | - |  | string |
+| │  │  └─ time | string | - |  | string |
+| │  │  └─ trafficHub | string | - |  | string |
+| │  │  └─ trafficHubCode | string | - |  | string |
+| │  └─ flight | object | - |  | - |
+| │  │  └─ flightId | string | - |  | string |
+| │  │  └─ flightNo | string | - |  | string |
+| │  └─ hasStopover | boolean | - |  | true/false |
+| │  └─ sharedAirline | object | - |  | - |
+| │  │  └─ aircraftModel | string | - |  | string |
+| │  │  └─ airline | string | - |  | string |
+| │  │  └─ airlineId | string | - |  | string |
+| │  └─ sharedFlight | object | - |  | - |
+| │  │  └─ flightId | string | - |  | string |
+| │  │  └─ flightNo | string | - |  | string |
+| │  └─ stopover | array | - |  | - |
+| │  │  └─ arrivalTime | string | - |  | string |
+| │  │  └─ city | string | - |  | string |
+| │  │  └─ cityCode | string | - |  | string |
+| │  │  └─ country | string | - |  | string |
+| │  │  └─ countryCode | string | - |  | string |
+| │  │  └─ departureTime | string | - |  | string |
+| │  │  └─ province | string | - |  | string |
+| │  │  └─ provinceCode | string | - |  | string |
+| │  │  └─ trafficHub | string | - |  | string |
+| │  │  └─ trafficHubCode | string | - |  | string |
+| └─ supplierCode | string | - |  | string |
+| └─ supplierName | string | - |  | string |
+| └─ voyageType | string | - |  | single |

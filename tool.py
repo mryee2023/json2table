@@ -1,6 +1,9 @@
 import json
 import sys
 
+# 定义表头常量
+TABLE_HEADER = "| 参数名称 | 参数类型 | 参数说明 | 是否必填 | 参数值约束 |\n|---------|---------|---------|---------|------------|"
+
 def read_json_file(file_path):
     """
     读取本地JSON文件
@@ -20,26 +23,38 @@ def read_json_file(file_path):
 
 def json_to_markdown_table(data):
     """
-    将JSON数据转换为markdown表格
+    将JSON数据转换为markdown表格，每100行添加一次表头
     """
-    # 表头
-    markdown = "| 参数名称 | 参数类型 | 参数说明 | 是否必填 | 参数值约束 |\n"
-    markdown += "|---------|---------|---------|---------|------------|\n"
-    
-    # 递归处理JSON
+    # 获取所有行
     rows = process_json("", data)
     
-    # 添加所有行
-    markdown += "\n".join(rows)
+    # 初始化结果
+    markdown_parts = []
+    current_part = []
     
-    return markdown
+    # 添加第一个表头
+    current_part.append(TABLE_HEADER)
+    
+    # 按每100行分割并添加表头
+    for i, row in enumerate(rows, 1):
+        current_part.append(row)
+        if i % 100 == 0 and i < len(rows):
+            markdown_parts.append("\n".join(current_part))
+            current_part = ["\n" + TABLE_HEADER]  # 新的部分从表头开始
+            
+    # 添加最后一部分
+    if current_part:
+        markdown_parts.append("\n".join(current_part))
+    
+    # 合并所有部分
+    return "\n".join(markdown_parts)
 
 def process_json(parent_key, data, level=0):
     """
     递归处理JSON数据
     """
     rows = []
-    indent = "└" * level  # 使用两个空格作为一个缩进级别
+    indent = "│  " * (level - 1) + ("└─ " if level > 0 else "")  # 使用树形结构符号作为缩进
     
     if isinstance(data, dict):
         for key, value in data.items():
@@ -49,7 +64,7 @@ def process_json(parent_key, data, level=0):
             if isinstance(value, (dict, list)):
                 # 添加当前字段
                 type_str = "object" if isinstance(value, dict) else "array"
-                rows.append(f"| {indent}{display_key} | {type_str} | - | 否 | - |")
+                rows.append(f"| {indent}{display_key} | {type_str} | - |  | - |")
                 
                 # 递归处理子字段，增加缩进级别
                 if isinstance(value, dict):
@@ -62,12 +77,12 @@ def process_json(parent_key, data, level=0):
                     else:
                         type_str = get_type_str(first_item)
                         value_constraint = get_value_constraint(first_item)
-                        rows.append(f"| {indent}  [{type_str}] | {type_str} | - | 否 | {value_constraint} |")
+                        rows.append(f"| {indent}└─ [{type_str}] | {type_str} | - |  | {value_constraint} |")
             else:
                 # 处理基本类型
                 type_str = get_type_str(value)
                 value_constraint = get_value_constraint(value)
-                rows.append(f"| {indent}{display_key} | {type_str} | - | 否 | {value_constraint} |")
+                rows.append(f"| {indent}{display_key} | {type_str} | - |  | {value_constraint} |")
                 
     elif isinstance(data, list) and len(data) > 0:
         # 处理数组的第一个元素作为示例
@@ -77,7 +92,7 @@ def process_json(parent_key, data, level=0):
         else:
             type_str = get_type_str(first_item)
             value_constraint = get_value_constraint(first_item)
-            rows.append(f"| {indent}[{type_str}] | {type_str} | - | 否 | {value_constraint} |")
+            rows.append(f"| {indent}[{type_str}] | {type_str} | - |  | {value_constraint} |")
         
     return rows
 
